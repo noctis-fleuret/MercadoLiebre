@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulares{
+    font-size: 24px;
+    text-align: center;
+}
+
+.precio{
+    font-size: 18px
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripciones{
+    font-size: 16px;
+    color: #666;
+}
+
+/* HEADER */
+
+header nav{
+    display: none
+}
+
+header{
+    background-color: #EAC926;
+    padding: 5px;
+    width: 100%;
+}
+
+.logo-principal{
+    width: 50%;
+    padding-right: 5%;
+}
+
+.barra-busqueda{
+    display: flex;
+    padding: 5%;
+
+}
+
+.barra-en-cuestion{
+    width: 50%;
+    height: 25px;
+}
+
+.icono-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    border: 1px solid black;
+    margin-left: 1%;
+    width: 21px;
+    height: 19px;
+    border-radius: 5px
+}
+
+.texto-centro{
+    display: flex;
+    justify-content: center;
+    margin-right: 5px;
+    align-items: center
+}
+
+#miniburger{
+    background-color: #1259c3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 45px;
+    height: 45px;
+    font-size: 29px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/* MAIN */
+
+main {
+    height: 880px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 240px;
+    max-width: 360px;
+    height: 100%;
+    min-height: 350px;
+    max-height: 800px;
+}
+
+.input,
+button{
+    border: 0 none transparent;
+    border-radius: 5px;
+    max-height: 35px;
+    min-height: 10px;
+    height: 5%;
+}
+
+#fecha {
+    border: 0 none transparent;
+    border-radius: 5px;
+    max-height: 35px;
+    min-height: 10px;
+    height: 5%;
+    padding-left: 10px;
+}
+
+.perfil {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input.input,
+.intereses,
+.perfil {
+    padding-left: 10px;
+}
+
+
+.titulos {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+button {
+    background-color: #007aff;;
+    color: white;
+    transition: all 0.1s;
+}
+
+#password {
+    border: 0 none transparent;
+    border-radius: 5px;
+    max-height: 35px;
+    min-height: 10px;
+    height: 5%;
+    padding-left: 10px;
+}
+
+button:hover {
+    background-color: #0022AA;
+}
+
+body p {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#iconos-footer{
+    color: #1259c3;
+    font-size: 2em;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+h2{
+    color: #666;
+}
+
+@media (min-width: 361px) {
+    #miniburger{
+        display: none;
+    }
+    header nav{
+        display: block;
+    }
+    .header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .texto-centro{
+        width: 50%;
+        padding-left: 5%;
+    }
+    .barra-busqueda{
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        height: 80px;
+        margin-left: 3%;
+    }
+    .barra-en-cuestion{
+        height: 25%;
+    }
+    .logo-principal{
+        width: 50%;
+        padding-right: 5%;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 5% ;
+    }
+    .titulos {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    body p {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    header nav ul{
+        display: flex;
+    }
+    .logo-principal{
+        width: 50%;
+    }
+    .texto-centro{
+        width: 50%;
+        padding-left: 18%;
+    }
+    .navegacero{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navegauno{
+        display: flex;
+        position: absolute;
+        left: 6%
+    }
+    .navegados{
+        display: flex;
+        position: relative;
+        left: 49%;
+    }
+    .navegauno li {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .navegados li {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .navegados li a i{
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    footer section{
+        flex-basis: 32%;
+    }
+}
